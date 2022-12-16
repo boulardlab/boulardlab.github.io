@@ -4,6 +4,22 @@ layout: default
 
 {{content}}
 
+{% assign repos = site.data.repos %}
+<h2 class="post-list-heading">Our repositories</h2>
+<ul class="repo-list">
+  {%- for repo in repos -%}
+  <li>
+    <h3 class="repo-list-header">
+      <a class="repo-link" href="{{ repo.url }}">
+        {{ repo.name | escape }}
+      </a>
+    </h3>
+    <p class="view">by {{ repo.author }}</p>
+  </li>
+  {%- endfor -%}
+</ul>
+
+
 {% if site.paginate %}
 {% assign posts = paginator.posts %}
 {% else %}

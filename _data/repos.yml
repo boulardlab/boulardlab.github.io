@@ -1,0 +1,9 @@
+- name: BS_EMSeq
+  url: https://boulardlab.github.io/BS_EMSeq/
+  github: https://github.com/boulardlab/BS_EMSeq
+  author: Sara Formichetti
+
+- name: BS_RNAseq
+  url: https://boulardlab.github.io/BS_RNASeq/
+  github: https://github.com/boulardlab/BS_RNASeq
+  author: Sara Formichetti
