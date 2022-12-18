@@ -1,0 +1,18 @@
+<div class="card" style="margin: 0.5rem 0">
+  <!-- <img src="..." class="card-img-top" alt="..." /> -->
+  <div class="card-body">
+    <h5 class="card-title">
+      <i class="lni lni-github"></i> {{ include.title }}
+    </h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      <i class="lni lni-user"></i> {{ include.author }}
+    </h6>
+
+    {% if include.description != null and include.description != "" %}
+    <p class="card-text">{{include.description}}</p>
+    {%endif %}
+    <a href="{{ include.link }}" class="btn btn-primary btn-sm float-right"
+      ><i class="lni lni-link"></i> Check out!</a
+    >
+  </div>
+</div>
