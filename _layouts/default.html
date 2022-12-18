@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css"> 
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -20,28 +22,26 @@
       <img src="{{site.logo | relative_url}}" alt="Logo" />
 
       <p>{{ site.description | default: site.github.project_tagline }}</p>
-      
-      <p class="view">
-        <ul>
-          <li><a href="{{ site.github.owner_url }}">View our GitHub page</a></li>
-          <li><a href="{{ "/feed.xml" | absolute_url }}">RSS Feed</a></h1></li>
-        </ul>
-      </p>
 
+      <ul class="list-unstyled">
+        <li><a href="https://www.embl.org/groups/boulard/">Institutional page</a></li>
+        <li><a href="{{ site.github.owner_url }}">View our GitHub page</a></li>
+      </ul>
 
     </header>
+    
       <section>
-
+      
       {{ content }}
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+        <a href="{{ "/feed.xml" | absolute_url }}">RSS Feed</a></h1>
       </footer>
-    </div>
+
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
   </body>
 </html>

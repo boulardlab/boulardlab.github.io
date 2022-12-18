@@ -6,5 +6,3 @@ layout: home
 list_title: News
 title: Welcome
 ---
-
-Hello!

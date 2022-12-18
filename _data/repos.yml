@@ -2,8 +2,12 @@
   url: https://boulardlab.github.io/BS_EMSeq/
   github: https://github.com/boulardlab/BS_EMSeq
   author: Sara Formichetti
+  description: |
+    An immunology-epigenetics project between the Boulard lab at EMBL Rome and the Storck lab at Institut Necker Enfants-Malades in Paris.
 
 - name: BS_RNAseq
   url: https://boulardlab.github.io/BS_RNASeq/
   github: https://github.com/boulardlab/BS_RNASeq
   author: Sara Formichetti
+  description: |
+    An immunology-epigenetics project between the Boulard lab at EMBL Rome and the Storck lab at Institut Necker Enfants-Malades in Paris.
